@@ -16,7 +16,7 @@ string[] AddElements(int size){
 string[] CheckElements(string[] str){
     string[] list = new string[str.Length];
     int j=0;
-    for(int i=0; i< str.GetLength(0); i++){
+    for(int i=0; i< str.Length; i++){
     if(str[i].Length<=3){
         list[j] = str[i];
         j++;
