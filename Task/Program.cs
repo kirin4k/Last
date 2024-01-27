@@ -13,11 +13,11 @@ string[] AddElements(int size){
 }
 
 
-string[] CheckElements(string[] str){
+string[] CheckElements(string[] str, int num){
     string[] list = new string[str.Length];
     int j=0;
     for(int i=0; i< str.Length; i++){
-    if(str[i].Length<=3){
+    if(str[i].Length<=num){
         list[j] = str[i];
         j++;
     }
