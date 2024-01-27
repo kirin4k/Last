@@ -1,6 +1,6 @@
 ﻿
 string[] strings = AddElements(5);
-
+string[] list = CheckElements(strings);
 
 
 string[] AddElements(int size){
@@ -11,3 +11,38 @@ string[] AddElements(int size){
     }
     return str;
 }
+
+
+string[] CheckElements(string[] str){
+    string[] list = new string[str.Length];
+    int j=0;
+    for(int i=0; i< str.GetLength(0); i++){
+    if(str[i].Length<=3){
+        list[j] = str[i];
+        j++;
+    }
+    }
+    return list;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
